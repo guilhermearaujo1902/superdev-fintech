@@ -25,6 +25,9 @@ public class Main {
 		case 2:
 			System.out.println("Encerrar");
 			break;
+		case 3:
+			System.out.println("Acessar");
+			break;
 		case 0:
 			System.out.println("Sair");
 			break;
