@@ -1,13 +1,15 @@
 package br.com.fintechBackend.model;
 
+import java.util.List;
+
 public abstract class Conta {
 	
 	private Integer numero;
 	private Double saldo;
 	private Double limite;
-	//private List<Transacao> extrato;
+	private List<Transacao> extrato;
 	private String banco;
-	//private cliente Cliente;
+	private Cliente cliente;
 	
 	public Conta() {
 		
@@ -43,6 +45,35 @@ public abstract class Conta {
 
 	public void setBanco(String banco) {
 		this.banco = banco;
+	}
+
+	public List<Transacao> getExtrato() {
+		return extrato;
+	}
+
+	public void setExtrato(List<Transacao> extrato) {
+		this.extrato = extrato;
+	}
+
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+	
+	
+	public Integer gerarNumero() {
+		return null;
+	}
+	
+	public void registrarTransacao() {
+		
+	}
+	
+	public void verSaldo() {
+		
 	}
 	
 }
