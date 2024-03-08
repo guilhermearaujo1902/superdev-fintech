@@ -12,6 +12,7 @@ public class Main {
 		System.out.println("     FINTECH APP     ");
 		System.out.println("[1] - Criar conta    ");
 		System.out.println("[2] - Encerrar conta ");
+		System.out.println("[3] - Acessar conta  ");
 		System.out.println("[0] - Sair           ");
 		System.out.println("*********************");
 		System.out.println("Escolha: ");
