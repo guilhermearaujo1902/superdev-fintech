@@ -53,5 +53,18 @@ public class Cliente {
 	public void encerrarConta() {
 		
 	}
+	
+	public void exibirContas() {
+		if (this.contas != null && this.contas.size() > 0) {
+			System.out.println(" - Contas disponíveis - ");
+			for (Conta conta : this.contas) {
+				System.out.println("Banco: " + conta.getBanco());
+				System.out.println("Número: " + conta.getNumero());
+				System.out.println("Saldo: " + conta.getSaldo());
+			}
+		} else {
+			System.out.println("Sem contas disponíveis no momento.");
+		}
+	}
 
 }

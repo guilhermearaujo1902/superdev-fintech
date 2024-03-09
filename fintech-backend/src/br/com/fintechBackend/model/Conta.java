@@ -9,7 +9,6 @@ public abstract class Conta {
 	private Double limite;
 	private List<Transacao> extrato;
 	private String banco;
-	private Cliente cliente;
 	
 	public Conta() {
 		
@@ -54,15 +53,6 @@ public abstract class Conta {
 	public void setExtrato(List<Transacao> extrato) {
 		this.extrato = extrato;
 	}
-
-	public Cliente getCliente() {
-		return cliente;
-	}
-
-	public void setCliente(Cliente cliente) {
-		this.cliente = cliente;
-	}
-	
 	
 	public Integer gerarNumero() {
 		return null;
